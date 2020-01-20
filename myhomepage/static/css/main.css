@@ -1,0 +1,94 @@
+body {
+	background: #d9d9d9;
+	font-size: 100%;
+	height: 100%;
+}
+
+main, header, nav {
+	display: block;
+}
+
+a {
+	color: black;
+}
+
+.site-header {
+	border-top: 20px solid #850000;
+	min-height: 260px;
+}
+
+.site-header .wrap {
+	padding: 20px;
+}
+
+.navbar {
+	margin-bottom: 15px;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+}
+
+.site-title {
+	line-height: 1.2;
+}
+
+.site-post {
+	border-radius: 25px;
+	border-top: 10px solid #800000;
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #f2f2f2;
+	font-family: Verdana, Geneva sans-serif;
+	margin-bottom: 15px;
+	padding-bottom: 25px;
+}
+
+.welcome-post h1 {
+	text-align: center;
+	font-size: 5em;
+}
+
+.article-img {
+	height: 65px;
+	width: 65px;
+	margin-right: 15px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.article-metadata a:hover {
+  color: #800000;
+  text-decoration: none;
+}
+
+.article-title {
+	font-family: Verdana, Geneva sans-serif;
+}
+
+a.article-title:hover {
+  color: #800000;
+  text-decoration: none;
+}
+
+.article-content {
+	white-space: pre-line;
+}
+
+/*.content-section {
+	background: ;
+	padding: ;
+	border: ;
+	border-radius: ;
+	margin-bottom: ;
+}*/
+
+#ytplayer {
+}

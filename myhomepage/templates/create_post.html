@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="site-post">
+		<form method="POST" action="">
+			{{ form.hidden_tag() }}
+			<fieldset class="form-group">
+				<legend class="border-bottom mb-4">{{ legend }}</legend>
+
+				<div class="form-group">
+					{{ form.category_id.label(class="form-control-label") }}
+					{{ form.category_id(class="form-control form-control-lg") }}
+				</div>
+
+				<div class="form-group">
+					{{ form.title.label(class="form-control-label") }}
+					{% if form.title.errors %}
+						{{ form.title(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{%for error in form.title.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+						</div>
+					{% else %}
+						{{ form.title(class="form-control form-control-lg") }}
+					{% endif %}
+				</div>
+				<div class="form-group">
+					{{ form.content.label(class="form-control-label") }}
+					{% if form.content.errors %}
+						{{ form.content(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.content.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+						</div>
+					{% else %}
+						{{ form.content(class="form-control form-control-lg") }}
+					{% endif %}
+				</div>
+
+				<div class="form-group">
+					{{ form.mediatype.label(class="form-control-label") }}
+					{{ form.mediatype }}
+
+					<div id="link-field">
+						{{ form.video_link.label(class="form-control-label") }}
+						{{ form.video_link (class="form-control form-control-lg", placeholder="www.youtube.com/") }}
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-group">
+				{{ form.submit(class="btn btn-outline-info") }}
+			</div>
+		</form>
+	</div>
+{% endblock content %}

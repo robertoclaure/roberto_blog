@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+	<div class="site-post">
+
+		<a data-flickr-embed="true" href="https://www.flickr.com/photos/9somboon/35071348993/" title="Big Yor at PakPra Thailand by Somboon Kaeoboonsong, on Flickr"><img src="https://live.staticflickr.com/4205/35071348993_39e6733199_b.jpg" width="100%" alt="Big Yor at PakPra Thailand"></a><script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+		<iframe onload="setWidth()" id="ytplayer" type="text/html" src="https://youtube.com/embed/{{ video }}"></iframe>
+
+		
+
+
+	</div>
+
+	<h1>{{ content.poemAuthor }}</h1>
+	{% for line in content.poemBody %}
+		<li>{{ line }}</li>
+	{% endfor %}
+
+{% endblock content %}
+
